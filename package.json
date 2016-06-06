@@ -1,0 +1,11 @@
+{
+  "name": "language-powerpc-assembly",
+  "version": "1.0.0",
+  "description": "Language support for POWER/ppc/powerpc assembly.",
+  "repository": "https://github.com/ruscur/language-powerpc-assembly",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {}
+}

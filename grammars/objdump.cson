@@ -1,0 +1,62 @@
+'fileTypes': []
+'name': 'objdump PPC'
+'patterns': [
+  {
+    'begin': '^(.*):\\s+file format (.*)$'
+    'beginCaptures':
+      '0':
+        'name': 'comment.ppc.assembly'
+      '1':
+        'name': 'entity.name.type.ppc.assembly'
+    'end': '^'
+    'name': 'meta.embedded.ppcasm'
+  }
+  {
+    'begin': '^Disassembly of section (.*):$'
+    'beginCaptures':
+      '0':
+        'name': 'comment.ppc.assembly'
+      '1':
+        'name': 'entity.name.tag.ppc.assembly'
+    'end': '^'
+    'name': 'meta.embedded.ppcasm'
+  }
+  {
+    'begin': '^[0-9A-Za-z]+ <(.*)>:$'
+    'beginCaptures':
+      '0':
+        'name': 'comment.ppc.assembly'
+      '1':
+        'name': 'entity.name.function.ppc.assembly'
+    'end': '^'
+    'name': 'meta.embedded.ppcasm'
+  }
+  {
+    'begin': '^\\s*[0-9A-Za-z]+:(?:\\t[0-9A-Za-z]{2}\\s+){0,1}(?:\\t|$)'
+    'beginCaptures':
+      '0':
+        'name': 'comment.ppc.assembly'
+    'end': '^'
+    'name': 'meta.embedded.ppcasm'
+    'patterns': [
+      {
+        'include': 'source.ppcasm'
+      }
+    ]
+  }
+  {
+    'include': '#special_block'
+  }
+  {
+    'include': 'source.c'
+  }
+  {
+    'include': 'source.cpp'
+  }
+
+  # For compatibility with Atom versions < 0.166
+  {
+    'include': 'source.c++'
+  }
+]
+'scopeName': 'objdump.ppcasm'
