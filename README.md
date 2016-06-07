@@ -10,4 +10,4 @@ Instructions are taken from what's in binutils.  If there's something missing, p
 
 Here's an example of what it looks like with the Tomorrow Night Eighties theme:
 
-![from linux/arch/powerpc/kernel/vector.S](https://i.imgur.com/tuIpozk.png)
+![from skiboot/asm/lock.S](https://i.imgur.com/GbDJUD9.png)
