@@ -27,7 +27,7 @@
   }
   {
     'match': '^[_a-zA-Z][a-zA-Z0-9-_.]*(?=:)'
-    'name': 'entity.name.function.ppc.assembly'
+    'name': 'entity.name.section.ppc.assembly'
   }
   {
     'match': '(?<=[<]).+(?=[+>])'
