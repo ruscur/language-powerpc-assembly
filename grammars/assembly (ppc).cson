@@ -22,6 +22,10 @@
     'name': 'keyword.other.vle.ppc.assembly'
   }
   {
+    'match': '^\\s*(?:\\.abort|\\.align|\\.ascii|\\.asciz|\\.balign[wl]?|\\.byte|\\.comm|\\.data|\\.def|\\.dim|\\.double|\\.eject|\\.else|\\.end|\\.elseif|\\.endef|\\.endfunc|\\.endif|\\.endm|\\.endr|\\.equ|\\.equiv|\\.err|\\.even|\\.exitm|\\.extern|\\.fail|\\.file|\\.fill|\\.float|\\.func|\.global|\\.hword|\\.ident|\\.if|\\.include|\\.incbin|\\.int|\\.irp|\\.irpc|\\.lcomm|\\.lflags|\\.line|\\.ln|\\.list|\\.long|\\.macro|\\.mri|\\.nolist|\\.octa|\\.org|\\.p2align[wl]?|\\.print|\\.psize|\\.purgem|\\.quad|\\.rept|\\.sbttl|\\.scl|\\.section|\\.set|\\.short|\\.single|\\.size|\\.sleb128|\\.skip|\\.space|\\.stabd|\\.stabn|\\.stabs|\\.string|\\.struct|\\.tag|\\.text|\\.title|\\.type|\\.uleb128|\\.val|\\.vtable_entry|\\.word)\\b'
+    'name': 'entity.name.tag.ppc.assembly'
+  }
+  {
     'match': '^[_a-zA-Z][a-zA-Z0-9-_.]*(?=:)'
     'name': 'entity.name.function.ppc.assembly'
   }
