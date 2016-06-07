@@ -38,6 +38,17 @@
     'name': 'meta.preprocessor.ppc.assembly'
   }
   {
+    'begin': '"'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.ppc.assembly'
+    'end': '"'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.ppc.assembly'
+    'name': 'string.quoted.double.include.ppc.assembly'
+  }
+  {
     'match': '(?:--|\\/\\/|\\#|;).*$'
     'name': 'comment.line'
   }
